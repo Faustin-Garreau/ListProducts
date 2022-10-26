@@ -22,6 +22,11 @@ class GetListProductsView extends GetView<getListProductsController> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Card(
+                    elevation: 5,
+                    margin: EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 16.0),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(0.0),
+                    ),
                     child: SizedBox(
                       width: 300,
                       height: 100,
