@@ -14,7 +14,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      title: 'Flutter Demo',
+      title: 'List Users',
+      theme: new ThemeData(
+          scaffoldBackgroundColor: Color.fromARGB(255, 87, 121, 126)),
       getPages: [
         GetPage(
           name: "/products",
@@ -23,9 +25,6 @@ class MyApp extends StatelessWidget {
         )
       ],
       initialRoute: "/products",
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
