@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:list_products/products/get_create_products_bindings.dart';
+import 'package:list_products/products/get_create_products_view.dart';
 import 'package:list_products/products/get_list_products_bindings.dart';
 import 'package:list_products/products/get_list_products_view.dart';
 
@@ -20,6 +22,11 @@ class MyApp extends StatelessWidget {
           name: "/products",
           page: () => const GetListProductsView(),
           binding: GetListProductsBidings(),
+        ),
+        GetPage(
+          name: "/products/create",
+          page: () => const GetCreatetProductsView(),
+          binding: GetCreateProductsBidings(),
         )
       ],
       initialRoute: "/products",

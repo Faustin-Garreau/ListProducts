@@ -41,6 +41,9 @@ dependencies:
   freezed: ^2.2.0
   json_annotation: ^4.7.0
   json_serializable: ^6.5.4
+  bottom_bar_page_transition: ^2.0.0
+  blur_bottom_bar: ^1.0.3
+  sweet_nav_bar: ^1.0.5
 
 dev_dependencies:
   flutter_test:
