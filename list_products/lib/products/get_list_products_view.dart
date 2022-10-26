@@ -5,6 +5,8 @@ import 'package:get/get.dart';
 import 'package:get/get_state_manager/src/simple/get_view.dart';
 import 'package:list_products/products/get_list_products_controller.dart';
 
+import 'bottom_bar.dart';
+
 class GetListProductsView extends GetView<getListProductsController> {
   const GetListProductsView({super.key});
 
@@ -12,6 +14,7 @@ class GetListProductsView extends GetView<getListProductsController> {
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
     return Scaffold(
+      bottomNavigationBar: SweetNaveBar(),
       body: controller.obx(
         (state) => SingleChildScrollView(
           child: Column(
